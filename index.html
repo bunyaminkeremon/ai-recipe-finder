@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>AI Recipe Finder</h1>
+        <p class="subtitle">Add your ingredients and let AI suggest recipes</p>
+
+        <div class="input-section">
+            <label>Your Ingredients</label>
+            <div class="ingredient-grid" id="ingredientGrid">
+                <button class="add-ingredient-btn" id="addIngBtn">+</button>
+            </div>
+
+            <div class="add-popup" id="addPopup" style="display:none;">
+                <input type="text" id="newIngredient" placeholder="e.g. chicken, rice, tomato...">
+                <div class="popup-buttons">
+                    <button class="popup-add" id="popupAdd">Add</button>
+                    <button class="popup-cancel" id="popupCancel">Cancel</button>
+                </div>
+            </div>
+
+            <div class="options-row">
+                <div class="input-group">
+                    <label>Cuisine</label>
+                    <select id="cuisine">
+                        <option value="">Any</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Diet</label>
+                    <select id="diet">
+                        <option value="">Any</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Gluten-free">Gluten-free</option>
+                        <option value="Low-carb">Low-carb</option>
+                        <option value="High-protein">High-protein</option>
+                    </select>
+                </div>
+            </div>
+            <button class="find-btn" id="findBtn">Find Recipes</button>
+        </div>
+
+        <div class="loading" id="loading" style="display:none;">
+            <div class="spinner"></div>
+            <span>Finding recipes...</span>
+        </div>
+
+        <div class="error-msg" id="errorMsg" style="display:none;"></div>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -12,11 +12,6 @@
         <p class="subtitle">Add your ingredients and let AI suggest recipes</p>
 
         <div class="input-section">
-            <label>Your Ingredients</label>
-            <div class="ingredient-grid" id="ingredientGrid">
-                <button class="add-ingredient-btn" id="addIngBtn">+</button>
-            </div>
-
             <div class="api-key-box">
                 <label>Groq API Key <span class="key-status" id="keyStatus">Not set</span></label>
                 <div class="key-row">
@@ -24,6 +19,11 @@
                     <button class="key-save" id="saveKeyBtn">Save</button>
                 </div>
                 <p class="key-hint">Get free key at <a href="https://console.groq.com" target="_blank">console.groq.com</a></p>
+            </div>
+
+            <label>Your Ingredients</label>
+            <div class="ingredient-grid" id="ingredientGrid">
+                <button class="add-ingredient-btn" id="addIngBtn">+</button>
             </div>
 
             <div class="add-popup" id="addPopup" style="display:none;">
@@ -74,3 +74,14 @@
     <script src="script.js"></script>
 </body>
 </html>
+```
+
+**Cmd + S** kaydet. Sonra:
+```
+git add .
+```
+```
+git commit -m "Fix ingredient button"
+```
+```
+git push

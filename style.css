@@ -309,3 +309,60 @@ h1 {
         flex-direction: column;
     }
 }
+.api-key-box {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+.api-key-box label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.key-status {
+    font-size: 11px;
+    color: #c0392b;
+}
+
+.key-row {
+    display: flex;
+    gap: 6px;
+}
+
+.key-row input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+}
+
+.key-save {
+    padding: 8px 14px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.key-save:hover { background: #333; }
+
+.key-hint {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 6px;
+}
+
+.key-hint a { color: #888; }
+
+
